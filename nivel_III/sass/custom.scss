@@ -1,0 +1,36 @@
+.nav-link:hover{
+    color: red !important;
+  }
+  .btn-danger:hover{
+    background-color: white !important;
+    color: red !important;
+  }
+  .btn-primary:hover{
+    background-color: white !important;
+    color: blue !important;
+  }
+  .btn-light:hover{
+    background-color: white !important;
+    color: gray !important;
+    border: 1px solid gray !important;
+  }
+  .nav-tabs a:hover{
+    text-decoration: underline;
+  }
+  .accordion-button:hover{
+    color: red;
+  }
+  .invalid-feedback:hover{
+    background-color: red;
+    color: white;
+  }
+  .info-footer:hover{
+    color: red !important;
+  }
+  .iconos img:hover{
+    background-color: red;
+    color: red;
+  }
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

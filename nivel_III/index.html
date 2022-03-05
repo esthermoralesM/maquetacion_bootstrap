@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="sass/reducido.css">
+ 
 </head>
 <body>
     
@@ -255,20 +257,18 @@
               </div>
             </div>
 
-          <form action="/action_page.php" class="row  m-auto  mt-4  was-validated">
-            <div class="input-group m-auto w-50 col-12  col-lg-6">
-              <input ID="txtPassword" type="Password" name="email" class="form-control" placeholder="Enter your email address"
-              [ngClass]="{'is-invalid': email.invalid}" required>
-              <span class="input-group-btn col-12  col-lg-6">
-                <button id="show_password" class="btn btn-danger col-12 col-lg-7 border" type="button"> 
-                  Contact Us<span class="fa fa-eye-slash icon"></span>
-                </button>
-              </span>
-              <div class="invalid-feedback" *ngIf="email.invalid">
-                <p *ngIf="email.errors?.['required']">El email es obligatorio</p>
-              </div>
-              </div>  
-          </form>
+            <form action="/action_page.php" class="row  m-auto  mt-4  was-validated">
+              <div class="input-group m-auto w-50 col-12  col-lg-6">
+                <input ID="txtEmail" type="text" name="uname" class="form-control" placeholder="Enter your email address" required>
+                <span class="input-group-btn col-12  col-lg-6">
+                  <button id="show_email" class="btn btn-danger col-12 col-lg-7 border" type="button"> 
+                    Contact Us<span class="fa fa-eye-slash icon"></span>
+                  </button>
+                </span>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback w-50">Please fill out this field.</div>
+                </div>  
+            </form>
          </div>
 
         <div class="bg-dark pt-3">
@@ -279,19 +279,19 @@
             </div>
 
             <div class="col-12 col-lg-2 ">
-              <P class="text-white">FEATURES</P>
+              <P class="text-white info-footer">FEATURES</P>
             </div>
 
             <div class="col-12 col-lg-2">
-               <p class="text-white"> PRICING</p>
+               <p class="text-white info-footer"> PRICING</p>
             </div>
 
             <div class="col-12 col-lg-2">
-             <p class="text-white">CONTACT</p> 
+             <p class="text-white info-footer">CONTACT</p> 
             </div>
           </div>
           
-          <div class="col-12 col-lg-2 text-center mb-2">
+          <div class="col-12 col-lg-2 text-center mb-2 iconos">
              <img src="images/icon-facebook.svg" alt="" class="me-3">
              <img src="images/icon-twitter.svg" alt="">
           </div>
